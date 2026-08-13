@@ -52,7 +52,6 @@
     <div class="hero-image">
       <div class="glow-ring">
         <div class="profile-img">
-          <!-- GANTI FOTO PROFIL DI SINI (ganti src="...") -->
           <img src="profil fani.jpeg" alt="Profile Foto">
         </div>
       </div>
@@ -62,7 +61,7 @@
   <div class="scroll-indicator"><span>SCROLL DOWN</span><i class="fas fa-chevron-down"></i></div>
 </section>
 
-<!-- BAGIAN ABOUT YANG UDAH DIGANTI -->
+<!-- BAGIAN ABOUT -->
 <section id="about" class="about">
   <div class="container">
     <div class="section-header">
@@ -79,11 +78,20 @@
             Tempat/Tanggal Lahir: Grobogan, 09 Juli 2010
           </h3>
 
-          <!-- INI BAGIAN FOTO KELUARGANYA -->
+          <!-- INI KOTAK FOTO KELUARGA 16:9 -->
           <div style="margin-top: 25px; margin-bottom: 25px;">
             <span style="display: block; margin-bottom: 10px; font-weight: bold; font-size: 1.1em;">Foto Keluarga:</span>
-            <!-- Ganti "foto-keluarga.jpg" dengan nama file fotomu -->
-            <img src="foto-keluarga.jpg" alt="Foto Keluarga Fani" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+            
+            <!-- Tempat kotaknya (rasio 16:9, ada border putus-putus biar kelihatan) -->
+            <div style="width: 100%; max-width: 600px; aspect-ratio: 16/9; border: 2px dashed rgba(255,255,255,0.4); border-radius: 12px; background: rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+              
+              <!-- Teks penanda kalau foto belum muncul -->
+              <span style="position: absolute; color: rgba(255,255,255,0.5); font-size: 14px; text-align: center;">[ Kotak Foto Keluarga 16:9 ]<br>Ganti src="foto-keluarga.jpg"</span>
+              
+              <!-- Fotonya nanti akan nutupin teks penanda di atas -->
+              <img src="foto-keluarga.jpg" alt="Foto Keluarga Fani" style="width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 1;">
+            
+            </div>
           </div>
 
           <div class="about-stats">
